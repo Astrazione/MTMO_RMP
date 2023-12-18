@@ -74,7 +74,7 @@ class ExaminationActivity : ComponentActivity() {
     private val MAX_INDEX_GESTURE = 25
     private var GESTURES_INDEXES = (0 until MAX_INDEX_GESTURE)
         .toList()
-        //.shuffled()
+        .shuffled()
         .take(COUNT_GESTURES)
 
     var indexLetter by mutableStateOf(0)
@@ -503,7 +503,7 @@ class ExaminationActivity : ComponentActivity() {
                     onClick = {
                         GESTURES_INDEXES = (0 until MAX_INDEX_GESTURE)
                         .toList()
-                        //.shuffled()
+                        .shuffled()
                         .take(COUNT_GESTURES);
                         onRetry() },
                     colors = ButtonDefaults.buttonColors(Color(128, 255, 128))

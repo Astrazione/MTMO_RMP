@@ -153,10 +153,10 @@ fun CameraView(
                     modifier = Modifier.padding(20.dp).align(Alignment.Center).size(70.dp),
                     onClick = {
                         lifecycleOwner.lifecycleScope.launch {
-                            for (i in 3 downTo 1) {
-                                countdownValue = i
-                                delay(1000)
-                            }
+//                            for (i in 3 downTo 1) {
+//                                countdownValue = i
+//                                delay(1000)
+//                            }
                             countdownValue = 0
 
                             delay(100)
